@@ -1,0 +1,14 @@
+integer dp[][]
+char input[][]
+
+function f (integer i,j) :
+	OutOfRange(i,j) : return true
+	IsDPExist : return dp[i][j]
+	setDPbyZero
+	return FourWays(input[i,j])//R(0,1),L(0,-1),D(1,0),U(-1,0)
+
+Main
+	input
+	ans = AllSumij(f(i,j))
+	return ans
+
